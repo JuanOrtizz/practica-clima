@@ -203,10 +203,10 @@ footer{
     }
 
     .contenedor-main p {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     #dias-recorridos::before{
-        font-size:2.3rem !important;
+        font-size:2.3rem;
     }
 }
