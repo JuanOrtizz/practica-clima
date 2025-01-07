@@ -198,15 +198,15 @@ footer{
 
     .contenedor-main {
         height: 40vh;
-        width: 80vw;
+        width: 90vw;
         padding: 10px;
     }
 
     .contenedor-main p {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     #dias-recorridos::before{
-        font-size:1rem;
+        font-size:2.3rem;
     }
 }
