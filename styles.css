@@ -1,0 +1,179 @@
+body{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: rgb(244, 193, 200);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(223, 10, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    'parrafo'
+    'redes'
+    ;
+}
+
+nav p{
+    grid-area: parrafo;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+ul{
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.titulo{
+    height: 70px;
+    width: 85%;
+    background-color: rgb(241, 136, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 0px 0;
+}
+
+.titulo p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contenedor-main {
+    height: 100%;
+    width: 85%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(7, 14.2%);
+    grid-template-rows: repeat(5, 20%);
+    border-radius: 0 0 15px 15px;
+    background-color: rgb(237, 166, 220);
+    gap: 1px;
+}
+
+.contenedor-main div{
+    border: 1px solid rgb(127, 123, 126);
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(239, 176, 243);
+}
+
+.dias {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.dias-letra {
+    font-size: 1rem;
+    color: gray;
+}
+
+#dias-recorridos {
+    background-color: rgb(212, 184, 210);
+    position: relative; /* Necesario para posicionar la X */
+}
+
+#dias-recorridos::before {
+    content: "✖"; /* Unicode para una X */
+    color: red;
+    font-size: 6rem;
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el centro exacto */
+    z-index: 10; /* Asegura que esté encima */
+}
+
+#dia-importante {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    z-index: 1; /* Asegura que el contenido esté encima del borde animado */
+    
+}
+
+#dia-importante::before {
+    content: "";
+    position: absolute;
+    inset: 0px; /* Grosor del borde animado */
+    border-radius: 10px; /* Borde redondeado igual que el contenedor */
+    background: linear-gradient(45deg, #f8c5d1, #f7d2a7, #f0e2a3, #b6e0d3, #a3d4f7, #d6b3f7, #f8c5d1);
+
+    background-size: 200%; /* Aumenta el tamaño del gradiente para el movimiento */
+    animation: move-gradient 5s linear infinite; /* Animación del gradiente */
+    z-index: -1; /* Coloca el borde detrás del contenido */
+}
+
+/* Animación para mover el gradiente */
+@keyframes move-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: rgb(223, 10, 191);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.contenedor-footer{
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-footer p{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
