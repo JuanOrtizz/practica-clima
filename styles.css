@@ -1,7 +1,6 @@
 body{
     display: grid;
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
     background-color: rgb(244, 193, 200);
     margin: 0;
     padding: 0;
@@ -176,4 +175,38 @@ footer{
     text-align: center;
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+@media (max-width: 480px){
+
+    nav p{
+        font-size: 0.8rem;
+    }
+
+    main{
+        padding: 0;
+        margin-top: 80px;
+    }
+
+    .titulo{
+        width:80vw;
+    }
+
+    .titulo p{
+        font-size: 0.9rem;
+    }
+
+    .contenedor-main {
+        height: 40vh;
+        width: 80vw;
+        padding: 10px;
+    }
+
+    .contenedor-main p {
+        font-size: 0.6rem;
+    }
+
+    #dias-recorridos::before{
+        font-size:2.3rem;
+    }
 }
