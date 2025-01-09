@@ -209,12 +209,13 @@ footer{
     
 
     .contenedor-carrusel{
-        height: 40vh;
+        height: 30vh;
         width: 90vw;
+        margin-bottom: 40px;
     }
     
     .contenedor-carrusel img{
-        height: 35vh;
+        height: 25vh;
         width: 85vw !important;
         border-radius: 10px;
     }
