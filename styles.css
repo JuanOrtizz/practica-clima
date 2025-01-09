@@ -208,6 +208,17 @@ footer{
     }
     
 
+    .contenedor-carrusel{
+        height: 40vh;
+        width: 90vw;
+    }
+    
+    .contenedor-carrusel img{
+        height: 35vh;
+        width: 85vw !important;
+        border-radius: 10px;
+    }
+
     .titulo{
         width:90vw;
     }
