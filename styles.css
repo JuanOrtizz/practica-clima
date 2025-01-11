@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     flex: 1;
+
 }
 
 header{
@@ -58,6 +59,34 @@ main{
     padding: 50px;
     flex-wrap: wrap;
     flex: 1;
+}
+
+.contenedor-modal{
+    height: 20vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.contenedor-modal button{
+    background-color: rgb(222, 77, 196);
+    border: none;
+    height: 10vh;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contenedor-modal button:hover{
+    background-color: rgb(185, 11, 153);
+    transition: 0.5s;
+}
+
+.contenedor-modal button:active{
+    background-color: rgb(89, 5, 74) !important;
+    transition: 0.3s;
 }
 
 .contenedor-carrusel{
@@ -209,13 +238,12 @@ footer{
     
 
     .contenedor-carrusel{
-        height: 30vh;
+        height: 40vh;
         width: 90vw;
-        margin-bottom: 40px;
     }
     
     .contenedor-carrusel img{
-        height: 25vh;
+        height: 35vh;
         width: 85vw !important;
         border-radius: 10px;
     }
